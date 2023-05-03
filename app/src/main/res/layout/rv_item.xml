@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardView"
@@ -8,7 +7,9 @@
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/standard_margin"
     app:cardCornerRadius="@dimen/standard_corner_card"
-    app:cardElevation="@dimen/standard_elevation_card">
+    app:cardElevation="@dimen/standard_elevation_card"
+    app:strokeColor="@color/colorSecondary"
+    app:strokeWidth="@dimen/standard_stroke_card">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,12 +19,8 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/standard_margin"
-            android:layout_marginLeft="@dimen/standard_margin"
-            android:layout_marginTop="@dimen/standard_margin"
-            android:layout_marginEnd="@dimen/standard_margin"
-            android:layout_marginRight="@dimen/standard_margin"
-            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_margin="@dimen/standard_margin"
+            android:contentDescription="@string/car_photo"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,14 +33,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/standard_margin"
-            android:layout_marginLeft="@dimen/standard_margin"
             android:layout_marginEnd="@dimen/standard_margin"
-            android:layout_marginRight="@dimen/standard_margin"
             android:layout_marginBottom="@dimen/standard_margin"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+            android:textColor="@color/colorSecondary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:text="@string/car_make" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

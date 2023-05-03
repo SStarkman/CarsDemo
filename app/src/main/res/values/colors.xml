@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <!-- The two sets of colors below are NOT overridden in res/values-night... -->
+    <color name="colorPrimary">#1e88e5</color>
+    <color name="colorPrimaryDark">#005cb2</color>
+    <color name="colorOnPrimary">#000000</color>
+    <!-- on... colors are used for both text and icons -->
+
+    <!-- secondary set of colors -->
+    <color name="colorSecondary">#5c6bc0</color>
+    <color name="colorSecondaryDark">#26418f</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
 </resources>

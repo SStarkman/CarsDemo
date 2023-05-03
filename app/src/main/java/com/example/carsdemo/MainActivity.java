@@ -1,19 +1,19 @@
 package com.example.carsdemo;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-
 public class MainActivity extends AppCompatActivity {
 
-    private int [] carImages = {R.drawable.acura, R.drawable.audi, R.drawable.ferrari,
-                                R.drawable.infiniti, R.drawable.lexus, R.drawable.mercedes,
-                                R.drawable.mustang, R.drawable.porsche, R.drawable.tesla};
+    private final int [] carImages = {R.drawable.acura, R.drawable.audi, R.drawable.ferrari,
+                                      R.drawable.infiniti, R.drawable.lexus, R.drawable.mercedes,
+                                      R.drawable.mustang, R.drawable.porsche, R.drawable.tesla};
 
-    private String [] carNames = {"Acura", "Audi", "Ferrari", "Infiniti", "Lexus",
-                                    "Mercedes", "Mustang", "Porsche", "Tesla"};
+    private final String [] carNames = {"Acura", "Audi", "Ferrari", "Infiniti", "Lexus",
+                                        "Mercedes", "Mustang", "Porsche", "Tesla"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
