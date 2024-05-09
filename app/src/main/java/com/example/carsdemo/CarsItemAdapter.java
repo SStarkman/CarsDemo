@@ -42,8 +42,8 @@ public class CarsItemAdapter extends RecyclerView.Adapter<CarsItemViewHolder> {
 
     private void clickHandler (View v, @NonNull CarsItemViewHolder holder)
     {
-        int currentPosition = holder.getBindingAdapterPosition ();
-        String msg = "Clicked on #" +  + (currentPosition+1) + ": " + carNames[currentPosition];
+        int currentPosition = holder.getAdapterPosition ();
+        String msg = "Clicked on #" +  (currentPosition+1) + ": " + carNames[currentPosition];
         Snackbar.make(v, msg, Snackbar.LENGTH_LONG).show ();
     }
 
